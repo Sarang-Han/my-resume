@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { SiTistory } from "react-icons/si";
 
-export default function Profile() {
+export default function Projects() {
   return (
     <section id="profile" className="min-h-screen flex items-center justify-center py-20">
       <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -28,10 +28,6 @@ export default function Profile() {
                className="text-2xl hover:text-blue-500 transition-colors">
               <SiTistory />
             </a>
-            <a href="mailto:hangpfm0518@ewhain.net" target="_blank" rel="noopener noreferrer"
-               className="text-2xl hover:text-blue-500 transition-colors">
-              <FaEnvelope />
-            </a>
           </div>
         </motion.div>
         
@@ -41,9 +37,9 @@ export default function Profile() {
           transition={{ duration: 0.8 }}
           className="flex justify-center"
         >
-          <div className="relative w-50 h-50 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-gray-200">
+          <div className="relative w-64 h-64 md:w-70 md:h-70 rounded-full overflow-hidden border-2 border-gray-200">
             <Image 
-              src="/images/profile.png" 
+              src="/images/my.png" 
               alt="프로필 이미지" 
               layout="fill"
               objectFit="cover"
