@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,10 +19,8 @@ export default function Header() {
         <ul className="flex space-x-6">
           <li><a href="#profile" className="hover:text-blue-500">Intro</a></li>
           <li><a href="#projects" className="hover:text-blue-500">Project</a></li>
-          <li><a href="#activities" className="hover:text-blue-500">Activity</a></li>
-          <li><a href="#skills" className="hover:text-blue-500">Skill</a></li>
+          <li><a href="#experience" className="hover:text-blue-500">Experience</a></li>
           <li><a href="#education" className="hover:text-blue-500">Education</a></li>
-          <li><a href="#leadership" className="hover:text-blue-500">Leadership</a></li>
         </ul>
       </nav>
     </header>
